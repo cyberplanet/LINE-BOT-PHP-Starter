@@ -1,2 +1,2 @@
 <?php
-echo "Hello LINE BOT 777";
+echo "I am a BOT";
