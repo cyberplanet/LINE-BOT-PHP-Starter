@@ -1,4 +1,6 @@
 <?php
+$proxy = 'http://fixie:2U1NSirJpjdwq06@velodrome.usefixie.com:80';
+$proxyauth = 'chonlapat_2004@hotmail.com:024180918cpE';
 $access_token = 'E/Sw48ckHwE0pozIY/UqcRpbsuq7MuGc52wWB2p+F1gpd2QsaSAjLbwV9vSzpJieM9B9KhupR5NejlQdDFu4UfdxPfeZKtp/P3ka8M1cHYgqiZ7xL8fvxUmzoixr+vDx1iX7bg/6t2OmoJNs9hn97gdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -37,6 +39,8 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch, CURLOPT_PROXY, $proxy);
+                        curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 			$result = curl_exec($ch);
 			curl_close($ch);
 
@@ -70,6 +74,8 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
 			curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+			curl_setopt($ch, CURLOPT_PROXY, $proxy);
+                        curl_setopt($ch, CURLOPT_PROXYUSERPWD, $proxyauth);
 			$result = curl_exec($ch);
 			curl_close($ch);
 
