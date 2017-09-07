@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'I am a IBMSD'
+				'text' => 'I am a BOT'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
@@ -56,7 +56,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'I am a IBMSD'
+				'text' => 'I am a BOT'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
